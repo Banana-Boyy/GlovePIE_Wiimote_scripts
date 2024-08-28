@@ -1,0 +1,29 @@
+﻿
+//Mouse Buttons
+Mouse.LeftButton = wiimote.B
+Mouse.RightButton = wiimote.nunchuk.Z
+
+//Use Nunchuk Joystick to move cursor.
+mouse.x += (DeadZone(Nunchuk.JoyX, 5%)/75)
+mouse.y += (DeadZone(Nunchuk.JoyY, 5%)/75)
+
+//Key.W = (-1.2 < wiimote.Nunchuk.JoyY < -0.5)
+//Key.S = (0.5 < wiimote.Nunchuk.JoyY < 1.2)
+//Key.A = (-1.2 < wiimote.Nunchuk.JoyX < -0.5)
+//Key.D = (0.5 < wiimote.Nunchuk.JoyX < 1.2)
+
+// PAD DIRECTIONAL
+key.W = wiimote.Up
+key.S = wiimote.Down
+key.A = wiimote.Left
+key.D = wiimote.Right
+
+//ETC.
+key.R = wiimote.A
+key.Space = wiimote.Minus
+mouse.WheelUp = wiimote.Plus
+key.E = wiimote.One
+key.B = wiimote.Two
+key.Escape = wiimote.Home
+Key.Shift = wiimote.nunchuk.C
+

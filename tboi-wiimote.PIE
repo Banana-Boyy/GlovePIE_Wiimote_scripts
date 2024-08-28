@@ -1,0 +1,14 @@
+﻿key.Up = wiimote.Up
+key.Down = wiimote.Down
+key.Left = wiimote.Left
+key.Right = wiimote.Right
+key.W = wiimote.Nunchuk.Up
+key.S = wiimote.Nunchuk.Down
+key.A = wiimote.Nunchuk.Left
+key.D = wiimote.Nunchuk.Right
+key.Q = wiimote.Nunchuk.ZButton
+key.Ctrl = wiimote.Nunchuk.CButton
+key.Space = wiimote.A
+key.E = wiimote.B
+key.Tab = wiimote.Minus
+key.Escape = wiimote.Plus

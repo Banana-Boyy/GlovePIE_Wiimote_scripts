@@ -1,0 +1,45 @@
+﻿//Wiimote and Nunchuk Mouse Script
+//by Nayib Pastrana
+
+//Added this part as a test. Use number keys
+//One through Four to test connection.
+//Each number lights responding LED light
+//on Wiimote.
+Wiimote1.Led1 = Keyboard.One
+Wiimote1.Led2 = Keyboard.Two
+Wiimote1.Led3 = Keyboard.Three
+Wiimote1.Led4 = Keyboard.Four
+
+//Use Nunchuk Joystick to move cursor.
+mouse.x += (DeadZone(Nunchuk.JoyX, 5%)/75)
+mouse.y += (DeadZone(Nunchuk.JoyY, 5%)/75)
+
+//Buttons 1 and 2 respond as
+//Page Up and Page Down, respectively.
+Keyboard.PageDown = Wiimote1.Two
+Keyboard.PageUp = Wiimote1.One
+
+//Click with A, Right-Click with C.
+mouse.LeftButton = (Wiimote1.A)
+mouse.RightButton = (Nunchuk.C)
+
+//Mouse's middle button responds with B.
+mouse.MiddleButton = (Wiimote.B)
+
+//Nunchuk Z Button minimizes all windows.
+Keyboard.Windows + Keyboard.D = Nunchuk.Z
+
+//D-Pad is used in place of Arrow Keys
+Keyboard.Up = Wiimote1.Up
+Keyboard.Down = Wiimote1.Down
+Keyboard.Left = Wiimote1.Left
+Keyboard.Right = Wiimote1.Right
+
+//Plus and Minus is used to zoom in and out.
+Keyboard.Ctrl + Keyboard.Equals = Wiimote1.Plus
+Keyboard.Ctrl + Keyboard.Minus = Wiimote1.Minus
+
+//Tap the HOME button to open the start menu.
+Keyboard.Windows = Wiimote1.Home
+
+//This is the end of the script.
